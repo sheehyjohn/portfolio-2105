@@ -94,7 +94,7 @@ const siteMetadata = {
         phone: '',
         address: '',
     },
-    disqus: "elemental-netlify-com",
+    disqus: "elemental-netlify-com", 
 }
 
 const beforeContactFormSubmit = data => {
