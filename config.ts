@@ -1,11 +1,11 @@
 const siteMetadata = {
-    title: `johnSheehy`,
+    title: `John Sheehy`,
     siteUrl: `http://localhost`,
     capitalizeTitleOnHome: false,
     logo: `/images/logo1.png`,
     icon: `/images/icon1.png`, 
-    titleImage: `/images/wall.png`,
-    ogImage: `/images/wall.png`,
+    titleImage: `/images/daisy-square.jpg`,
+    ogImage: `/images/daisy-square.jpg`,
     twoColumnWall: true,
     cookiePolicy: true,
     introTag: `photography`,
@@ -66,28 +66,33 @@ const siteMetadata = {
         },
         */
         {
+            name: "Email",
+            icon: "/images/email.png",
+            url: "mailto:sheehy.john@gmail.com",
+        },
+        {
             name: "Twitter",
             icon: "/images/Twitter.svg",
-            url: "#",
+            url: "https://twitter.com/sheehyjohn",
         },
         {
             name: "Instagram",
             icon: "/images/Instagram.svg",
-            url: "#",
+            url: "https://www.instagram.com/sheehy.john",
         },
         {
             name: "Youtube",
             icon: "/images/Youtube.svg",
-            url: "#",
+            url: "https://www.youtube.com/user/sheehyjohn",
         },
     ],
     contact: {
         // leave empty ('') or false to hide form
-        api_url: "https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-        mail: "hi@akzhy.com",
-        phone: "000-000-0000",
-        address: "1234 \nLocation \nLocation",
+        api_url: " ",
+        description: '',
+        mail: '',
+        phone: '',
+        address: '',
     },
     disqus: "elemental-netlify-com",
 }

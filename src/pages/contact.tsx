@@ -12,7 +12,7 @@ export default ({data, location}: PageProps<ContactQuery>) => {
     return (
         <Layout
             seo={{
-                title: "Contact",
+                title: "Contact1",
             }}
             location={location}
         >
@@ -21,16 +21,19 @@ export default ({data, location}: PageProps<ContactQuery>) => {
                     <h2 className="font-black text-5xl text-color-1">
                         Contact
                     </h2>
+                    <div className={`w-full ${hasContactForm ? 'lg:w-1/2' : 'lg:w-2/3 mx-auto'} px-6 pt-8`}>
+                        
+                        </div>
+                    <Description data={data.site.siteMetadata.contact} />
                 </div>
                 <div className="flex flex-wrap pb-40">
+             
                     {hasContactForm &&
                         <div className="w-full lg:w-1/2 px-6">
                         <Form api={api_url}/>
                     </div>
                     }
-                    <div className={`w-full ${hasContactForm ? 'lg:w-1/2' : 'lg:w-2/3 mx-auto'} px-6 pt-8`}>
-                        <Description data={data.site.siteMetadata.contact} />
-                    </div>
+                   
                 </div>
             </div>
         </Layout>

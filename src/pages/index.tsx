@@ -169,21 +169,10 @@ const Contact = ({ data }) => {
                 <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
                     Contact
                 </h2>
+                <ContactDescription data={data} />
             </div>
-            <div className="flex flex-wrap pb-40">
-                {hasContactForm && (
-                    <div className="w-full lg:w-1/2 px-4 lg:pl-2 lg:pr-6">
-                        <Form api={data.api_url} />
-                    </div>
-                )}
-                <div
-                    className={`w-full ${
-                        hasContactForm ? "lg:w-1/2" : "lg:w-2/3 mx-auto"
-                    } px-6 pt-8`}
-                >
-                    <ContactDescription data={data} />
-                </div>
-            </div>
+          
+        
         </div>
     )
 }
