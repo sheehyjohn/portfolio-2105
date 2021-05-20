@@ -22,10 +22,11 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
             even={(_ + 1) % 2 === 0}
         />
     ))
-        
+    /* 
     const blogList = data.blog.edges.map(item => (
         <ItemBlog data={item.node} key={`b-item-index-${item.node.id}`} />
     ))
+    */
 
     return (
         <Layout
@@ -42,7 +43,7 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
             <div className="px-4 lg:px-0" id="portfolio">
                 {portfolioList}
             </div>
-            <Blog>{blogList}</Blog>
+            
             <Contact data={siteData.contact} />
         </Layout>
     )
@@ -141,7 +142,9 @@ const Wall = ({ data }) => {
     )
 }
 
- 
+
+
+/*
 
 
 const Blog = ({ children }) => {
@@ -156,6 +159,7 @@ const Blog = ({ children }) => {
         </div>
     )
 }
+*/
 
 const Contact = ({ data }) => {
     const hasContactForm = data.api_url
