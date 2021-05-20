@@ -29,7 +29,6 @@ export interface IndexPageQuery_site_siteMetadata {
   ogImage: string | null;
   twoColumnWall: boolean | null;
   introTag: string | null;
-  about: string | null;
   contact: IndexPageQuery_site_siteMetadata_contact | null;
   social: (IndexPageQuery_site_siteMetadata_social | null)[] | null;
 }
