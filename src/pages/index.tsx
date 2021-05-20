@@ -22,7 +22,7 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
             even={(_ + 1) % 2 === 0}
         />
     ))
-
+        
     const blogList = data.blog.edges.map(item => (
         <ItemBlog data={item.node} key={`b-item-index-${item.node.id}`} />
     ))
@@ -97,7 +97,7 @@ const Wall = ({ data }) => {
             <p className="text-base lg:text-lg mt-4">{data.description}</p>
             <ScrollIntoView selector="#portfolio">
                 <Button
-                    title="SEE WORKS"
+                    title="Portfolio"
                     type="button"
                     iconRight={<ArrowRight />}
                 />
@@ -153,6 +153,7 @@ const About = ({ data }) => {
         </div>
     )
 }
+
 
 const Blog = ({ children }) => {
     return (
